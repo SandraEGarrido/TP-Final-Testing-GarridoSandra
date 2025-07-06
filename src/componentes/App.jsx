@@ -8,6 +8,7 @@ import { ContextLibros } from "./contextos/index.js";
 import FormBiblioteca from "./FormBiblioteca.jsx";
 import { bibliotecasReducer } from "./reducers/index.js";
 import { ContextBibliotecas } from "./contextos/index.js";
+import { Grid } from "@mui/material";
 
 import NavBar from "./NavBar.jsx";
 
@@ -47,19 +48,27 @@ function NoExistePagina() {
 
 function LibrosApp() {
   return (
-    <>
-      <FormLibro />
-      <ListadoLibros />
-    </>
+    <Grid container spacing={2} padding={2}>
+      <Grid item xs={12} md={4}>
+        <FormLibro />
+      </Grid>
+      <Grid item xs={12} md={8}>
+        <ListadoLibros />
+      </Grid>
+    </Grid>
   );
 }
 
 function BibliotecasApp() {
   return (
-    <>
-      <FormBiblioteca />
-      <ListadoBibliotecas />
-    </>
+    <Grid container spacing={2} padding={2}>
+      <Grid item xs={12} md={4}>
+        <FormBiblioteca />
+      </Grid>
+      <Grid item xs={12} md={8}>
+        <ListadoBibliotecas />
+      </Grid>
+    </Grid>
   );
 }
 
