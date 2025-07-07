@@ -96,7 +96,7 @@ export default function FormLibro() {
   return (
     <Box
       sx={{
-        width: "100%",
+        width: "90%",
         maxWidth: 400,
         margin: "auto",
         padding: 2,
