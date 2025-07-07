@@ -93,7 +93,7 @@ export default function FormLibro() {
   };
 
   return (
-    <div style={{ width: 300, padding: 10, marginLeft: 250 }}>
+    <div style={{ maxWidth: 400, padding: 10, margin: "auto" }}>
       <form id="formLibro" onSubmit={handlerSubmit}>
         <FormControl fullWidth>
           <TextField
