@@ -5,6 +5,7 @@ import Button from "@mui/material/Button";
 import SaveIcon from "@mui/icons-material/Save";
 import CancelIcon from "@mui/icons-material/Cancel";
 import { FormControl, TextField } from "@mui/material";
+import { Box } from "@mui/material";
 
 // Importo el contexto donde está el dispatch para manejar las bibliotecas
 import { ContextBibliotecas } from "./contextos";
@@ -74,14 +75,23 @@ export default function FormBiblioteca() {
     // Uso dispatch para enviar la acción "agregar" con la biblioteca
     dispatchBibliotecas({
       type: actualizar ? "actualizar" : "agregar",
-      biblioteca: actualizar ? { ...biblioteca, id: bibliotecaActualizar.id } : biblioteca,
+      biblioteca: actualizar
+        ? { ...biblioteca, id: bibliotecaActualizar.id }
+        : biblioteca,
     });
 
     limpiarForm(); // Se limpia el formulario después que guarda
   };
 
   return (
-    <div style={{ width: 300, padding: 10, marginLeft: 250 }}>
+    <Box
+      sx={{
+        width: "100%",
+        maxWidth: 400,
+        margin: "auto",
+        padding: 2,
+      }}
+    >
       <form id="formBiblioteca" onSubmit={handlerSubmit}>
         <FormControl fullWidth>
           <TextField
@@ -132,6 +142,6 @@ export default function FormBiblioteca() {
           </Button>
         )}
       </form>
-    </div>
+    </Box>
   );
 }
