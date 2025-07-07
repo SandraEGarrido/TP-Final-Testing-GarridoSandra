@@ -8,6 +8,7 @@ import { FormControl, InputLabel, MenuItem, TextField } from "@mui/material";
 import Select from "@mui/material/Select";
 // Importo el contexto donde está el dispatch para manejar los libros
 import { ContextLibros } from "./contextos";
+import { Box } from "@mui/material";
 
 export default function FormLibro() {
   const sxFormLibro = {
@@ -93,7 +94,14 @@ export default function FormLibro() {
   };
 
   return (
-    <div style={{ maxWidth: 400, padding: 10, margin: "auto" }}>
+    <Box
+      sx={{
+        width: "100%",
+        maxWidth: 400,
+        margin: "auto",
+        padding: 2,
+      }}
+    >
       <form id="formLibro" onSubmit={handlerSubmit}>
         <FormControl fullWidth>
           <TextField
@@ -174,6 +182,6 @@ export default function FormLibro() {
           </Button>
         )}
       </form>
-    </div>
+    </Box>
   );
 }
