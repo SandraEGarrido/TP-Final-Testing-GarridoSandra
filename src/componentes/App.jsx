@@ -11,6 +11,8 @@ import { ContextBibliotecas } from "./contextos/index.js";
 import { Grid } from "@mui/material";
 
 import NavBar from "./NavBar.jsx";
+import LoginFicticio from "./LoginFicticio.jsx";
+import PerfilUsuario from "./PerfilUsuario.jsx";
 
 import {
   createBrowserRouter,
@@ -36,6 +38,8 @@ function Root() {
       <Route element={<Layout />}>
         <Route path="/libros" element={<LibrosApp />} />
         <Route path="/bibliotecas" element={<BibliotecasApp />} />
+        <Route path="/login" element={<LoginFicticio />} />
+        <Route path="/perfil" element={<PerfilUsuario />} />
         <Route path="*" element={<NoExistePagina />} />
       </Route>
     </Routes>
