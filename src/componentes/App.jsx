@@ -9,6 +9,7 @@ import FormBiblioteca from "./FormBiblioteca.jsx";
 import { bibliotecasReducer } from "./reducers/index.js";
 import { ContextBibliotecas } from "./contextos/index.js";
 import { Grid } from "@mui/material";
+import { Box } from "@mui/material";
 
 import NavBar from "./NavBar.jsx";
 import LoginFicticio from "./LoginFicticio.jsx";
@@ -52,14 +53,27 @@ function NoExistePagina() {
 
 function LibrosApp() {
   return (
-    <Grid container spacing={2} padding={2}>
-      <Grid item xs={12} md={4}>
+    <Box
+      sx={{
+        display: "flex",
+        gap: 2,
+        padding: 2,
+        flexDirection: {
+          xs: "column",
+          md: "row",
+        },
+      }}
+    >
+      {/* Formulario en columna fija */}
+      <Box sx={{ flex: 1, maxWidth: { xs: 150, md: 400 } }}>
         <FormLibro />
-      </Grid>
-      <Grid item xs={12} md={8}>
+      </Box>
+
+      {/* Tabla expandible */}
+      <Box sx={{ flex: 3 }}>
         <ListadoLibros />
-      </Grid>
-    </Grid>
+      </Box>
+    </Box>
   );
 }
 
