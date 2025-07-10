@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "compile": "webpack",
-    "web": "webpack serve --open"
+    "web": "webpack serve --open",
+    "build": "webpack --mode production"
   },
   "author": "Sandra Garrido",
   "license": "ISC",
