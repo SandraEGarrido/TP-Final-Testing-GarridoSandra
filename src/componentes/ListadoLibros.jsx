@@ -37,7 +37,7 @@ export default function ListadoLibros() {
   return (
     <TableContainer
       component={Paper}
-      sx={{ maxWidth: 1000, margin: "auto", marginTop: 4 }}
+      sx={{ maxWidth: 900, margin: "auto", marginTop: 4 }}
     >
       <Table>
         {/* Encabezado de la tabla */}
@@ -73,7 +73,7 @@ export default function ListadoLibros() {
               <TableCell>{libro.descripcion}</TableCell>
               <TableCell>{libro.fechaIngreso}</TableCell>
               <TableCell>{libro.genero}</TableCell>
-              <TableCell>
+              <TableCell sx={{ width: 120 }}>
                 <Button
                   size="small"
                   color="error"
