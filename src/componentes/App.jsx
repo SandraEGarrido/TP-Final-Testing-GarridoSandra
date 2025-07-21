@@ -79,11 +79,11 @@ function LibrosApp() {
 
 function BibliotecasApp() {
   return (
-    <Grid container spacing={2} padding={2}>
-      <Grid item xs={12} md={4}>
+    <Grid container spacing={2} padding={2} columns={12}>
+      <Grid sx={{ gridColumn: { xs: "span 12", md: "span 4" } }}>
         <FormBiblioteca />
       </Grid>
-      <Grid item xs={12} md={8}>
+      <Grid sx={{ gridColumn: { xs: "span 12", md: "span 8" } }}>
         <ListadoBibliotecas />
       </Grid>
     </Grid>
