@@ -1,57 +1,65 @@
-# 📚 Gestión de Libros y Bibliotecas
+# 🧪 TP Final – Testing con Jest (React / JavaScript)
 
-Este proyecto es una aplicación web desarrollada con React, Webpack y Material UI. Fue creado como trabajo práctico final y permite gestionar entidades relacionadas con libros y bibliotecas de forma eficiente y moderna.
+## 📘 Descripción
+Proyecto del **Trabajo Práctico Final de la materia Testing de Software (IFES – Neuquén)**.  
+Incluye la configuración completa de **Jest** y **Babel**, tres **pruebas unitarias** y una **prueba de integración** desarrolladas sobre funciones de gestión de libros.
 
-## 🚀 Funcionalidades principales
+El objetivo fue comprender y aplicar los conceptos de **pruebas unitarias** e **integración**, asegurando que las funciones del sistema se comporten correctamente y que su interacción sea coherente.
 
-- ✅ Alta, baja y modificación de **Libros**
-- ✅ Alta, baja y modificación de **Bibliotecas**
-- ✅ Navegación entre rutas con React Router
-- ✅ **Login y cierre de sesión simulado**
-- ✅ Uso de contexto para compartir estado global
-- ✅ Diseño responsive con Material UI
-- ✅ Despliegue en Vercel
+---
 
-## 🔐 Autenticación
+## ⚙️ Tecnologías utilizadas
+- **React 19**
+- **Jest 30**
+- **Babel 7**
+- **@testing-library/react**
 
-El sistema incluye un módulo de login **simulado**, pensado para fines prácticos y demostrativos. Al ingresar, el usuario accede a las funcionalidades privadas de la aplicación.  
-También se incluye un botón de **cerrar sesión** que redirige al login y borra el estado del usuario desde el contexto.
+---
 
-⚠️ *Este módulo no valida credenciales reales ni consulta a bases de datos externas.*
+## 📂 Estructura principal del proyecto
+src/
+┣ componentes/
+┃ ┗ tests/
+┃ ┣ buscarLibro.test.js
+┃ ┣ contarLibros.test.js
+┃ ┣ eliminarLibro.test.js
+┃ ┣ integracion.test.js
+┃ ┗ demo.test.js
+┗ funciones.js
+babel.config.js
+jest.config.js
+package.json
 
-## 🛠️ Tecnologías utilizadas
 
-- ⚛️ React 19
-- 🧭 React Router DOM 7
-- 🎨 Material UI
-- 📦 Webpack
-- 🔤 Babel
-- ☁️ Vercel (deploy)
+---
 
-## 📦 Instalación local
+## 🧩 Pruebas realizadas
 
-Para correr el proyecto en tu computadora:
+### 🔹 Pruebas unitarias
+1. **`contarLibros.test.js`**  
+   Verifica que la función `contarLibros()` calcule correctamente la cantidad de libros de una lista.  
+   - *Resultado esperado:* devuelve el número exacto de elementos.
 
-```bash
-npm install
-npm run web
-```
+2. **`buscarLibro.test.js`**  
+   Comprueba que `buscarLibro()` encuentre un libro específico dentro del array según su título.  
+   - *Resultado esperado:* devuelve el objeto correcto o `undefined` si no existe.
 
-Esto levanta el servidor local en `http://localhost:8080`.
+3. **`eliminarLibro.test.js`**  
+   Evalúa que `eliminarLibro()` elimine correctamente un libro del arreglo sin modificar los demás.  
+   - *Resultado esperado:* el array resultante tiene un elemento menos.
 
-## 🌐 Enlace en producción
+---
 
-👉 [Ver app online en Vercel](https://react-parcial-garrido-completo-copi.vercel.app/libros)
+### 🔸 Prueba de integración
+**`integracion.test.js`**  
+Combina `eliminarLibro()` y `contarLibros()` para comprobar que, al eliminar un libro,  
+la cantidad total se actualice correctamente.  
+- *Resultado esperado:* si había 3 libros y se elimina 1, el nuevo conteo es 2.
 
-## 🗂️ Estructura del proyecto
+---
 
-- `src/componentes/` → Componentes como `FormLibro`, `ListadoLibros`, `NavBar`, `Login`, etc.
-- `src/contextos/` → Contextos como `ContextLibros`, `ContextBibliotecas`, etc.
-- `src/reducers/` → Reducers para manejar estados complejos (como libros y bibliotecas).
-- `public/` → `index.html` y recursos estáticos
+## 🚀 Cómo ejecutar las pruebas
 
-## ✍️ Autora
-
-**Sandra Garrido**  
-Trabajo práctico final — Curso de React  
-Argentina, 2025
+1. Instalar dependencias:
+   ```bash
+   npm install
