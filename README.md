@@ -58,6 +58,24 @@ la cantidad total se actualice correctamente.
 
 ---
 
+📸 Pruebas Snapshot – Comportamiento visual del NavBar
+
+Esta prueba está basada en el componente NavBar, específicamente en el botón “Libros”.
+Su objetivo es verificar que el color de fondo cambie correctamente cuando el usuario pasa el mouse por encima (hover) y luego vuelva al estado original.
+
+Para ello se utilizan Snapshots de Jest, que capturan la estructura renderizada del componente en distintos momentos:
+
+Estado inicial: antes del hover.
+
+Durante el hover: con el color modificado.
+
+Después del hover: cuando el color vuelve a su estado normal.
+
+Jest guarda automáticamente estos tres estados dentro de un archivo de snapshot.
+Cada bloque representa una “foto técnica” del componente renderizado.
+Si en futuras versiones el componente cambia su estructura o estilos,
+Jest alertará que el snapshot ya no coincide, permitiendo detectar cambios visuales no intencionados.
+
 ## 🚀 Cómo ejecutar las pruebas
 
 1. Instalar dependencias:

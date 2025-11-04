@@ -1,0 +1,220 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`prueba cambio de color del botón Libros con snapshots 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiBox-root css-i9gxme"
+  >
+    <header
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-ptdwpq-MuiPaper-root-MuiAppBar-root"
+      style="--Paper-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);"
+    >
+      <div
+        class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-yg49xf-MuiToolbar-root"
+      >
+        <div
+          class="MuiStack-root css-6za6r5-MuiStack-root"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1tocwe7-MuiSvgIcon-root"
+            data-testid="CollectionsBookmarkIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4z"
+            />
+            <path
+              d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2m0 10-2.5-1.5L15 12V4h5z"
+            />
+          </svg>
+          <div
+            class="MuiTypography-root MuiTypography-subtitle1 css-s8qgk8-MuiTypography-root"
+          >
+            BiblioGestor
+          </div>
+          <a
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-igumfx-MuiButtonBase-root-MuiButton-root"
+            data-discover="true"
+            href="/libros"
+            tabindex="0"
+          >
+            Libros
+          </a>
+          <a
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-igumfx-MuiButtonBase-root-MuiButton-root"
+            data-discover="true"
+            href="/bibliotecas"
+            tabindex="0"
+          >
+            Bibliotecas
+          </a>
+        </div>
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1avsmgh-MuiButtonBase-root-MuiIconButton-root"
+          tabindex="0"
+          type="button"
+        >
+          <div
+            class="MuiAvatar-root MuiAvatar-circular css-1d37et-MuiAvatar-root"
+          >
+            <img
+              alt="Usuario"
+              class="MuiAvatar-img css-1su80sj-MuiAvatar-img"
+              src="/img/fotoPerfil.png"
+            />
+          </div>
+        </button>
+      </div>
+    </header>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`prueba cambio de color del botón Libros con snapshots 2`] = `
+<DocumentFragment>
+  <div
+    class="MuiBox-root css-i9gxme"
+  >
+    <header
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-ptdwpq-MuiPaper-root-MuiAppBar-root"
+      style="--Paper-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);"
+    >
+      <div
+        class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-yg49xf-MuiToolbar-root"
+      >
+        <div
+          class="MuiStack-root css-6za6r5-MuiStack-root"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1tocwe7-MuiSvgIcon-root"
+            data-testid="CollectionsBookmarkIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4z"
+            />
+            <path
+              d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2m0 10-2.5-1.5L15 12V4h5z"
+            />
+          </svg>
+          <div
+            class="MuiTypography-root MuiTypography-subtitle1 css-s8qgk8-MuiTypography-root"
+          >
+            BiblioGestor
+          </div>
+          <a
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-igumfx-MuiButtonBase-root-MuiButton-root"
+            data-discover="true"
+            href="/libros"
+            tabindex="0"
+          >
+            Libros
+          </a>
+          <a
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-igumfx-MuiButtonBase-root-MuiButton-root"
+            data-discover="true"
+            href="/bibliotecas"
+            tabindex="0"
+          >
+            Bibliotecas
+          </a>
+        </div>
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1avsmgh-MuiButtonBase-root-MuiIconButton-root"
+          tabindex="0"
+          type="button"
+        >
+          <div
+            class="MuiAvatar-root MuiAvatar-circular css-1d37et-MuiAvatar-root"
+          >
+            <img
+              alt="Usuario"
+              class="MuiAvatar-img css-1su80sj-MuiAvatar-img"
+              src="/img/fotoPerfil.png"
+            />
+          </div>
+        </button>
+      </div>
+    </header>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`prueba cambio de color del botón Libros con snapshots 3`] = `
+<DocumentFragment>
+  <div
+    class="MuiBox-root css-i9gxme"
+  >
+    <header
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-ptdwpq-MuiPaper-root-MuiAppBar-root"
+      style="--Paper-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);"
+    >
+      <div
+        class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-yg49xf-MuiToolbar-root"
+      >
+        <div
+          class="MuiStack-root css-6za6r5-MuiStack-root"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1tocwe7-MuiSvgIcon-root"
+            data-testid="CollectionsBookmarkIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4z"
+            />
+            <path
+              d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2m0 10-2.5-1.5L15 12V4h5z"
+            />
+          </svg>
+          <div
+            class="MuiTypography-root MuiTypography-subtitle1 css-s8qgk8-MuiTypography-root"
+          >
+            BiblioGestor
+          </div>
+          <a
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-igumfx-MuiButtonBase-root-MuiButton-root"
+            data-discover="true"
+            href="/libros"
+            tabindex="0"
+          >
+            Libros
+            <span
+              class="MuiTouchRipple-root css-r3djoj-MuiTouchRipple-root"
+            />
+          </a>
+          <a
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-igumfx-MuiButtonBase-root-MuiButton-root"
+            data-discover="true"
+            href="/bibliotecas"
+            tabindex="0"
+          >
+            Bibliotecas
+          </a>
+        </div>
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1avsmgh-MuiButtonBase-root-MuiIconButton-root"
+          tabindex="0"
+          type="button"
+        >
+          <div
+            class="MuiAvatar-root MuiAvatar-circular css-1d37et-MuiAvatar-root"
+          >
+            <img
+              alt="Usuario"
+              class="MuiAvatar-img css-1su80sj-MuiAvatar-img"
+              src="/img/fotoPerfil.png"
+            />
+          </div>
+        </button>
+      </div>
+    </header>
+  </div>
+</DocumentFragment>
+`;

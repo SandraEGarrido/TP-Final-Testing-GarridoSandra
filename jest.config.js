@@ -7,4 +7,6 @@ export default {
     "^.+\\.(js|jsx)$": "babel-jest", // Usa Babel para traducir JSX
   },
   moduleFileExtensions: ["js", "jsx"],
+  setupFilesAfterEnv: ["<rootDir>/jest.setup.js"],
+
 };
